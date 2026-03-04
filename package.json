@@ -1,0 +1,31 @@
+{
+    "name": "orvex-pay-react",
+    "version": "1.0.0",
+    "description": "Official React UI Kit for OrvexPay. Ready-to-use payment components.",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsup src/index.ts --format cjs,esm --dts --minify --clean",
+        "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+        "lint": "eslint src"
+    },
+    "peerDependencies": {
+        "react": ">=16",
+        "react-dom": ">=16",
+        "orvex-pay": "^1.2.0"
+    },
+    "devDependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "typescript": "^5.0.0",
+        "tsup": "^8.0.0",
+        "@types/react": "^18.2.0",
+        "@types/react-dom": "^18.2.0"
+    },
+    "author": "OrvexPay",
+    "license": "MIT"
+}
